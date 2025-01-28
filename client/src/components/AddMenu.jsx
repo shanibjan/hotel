@@ -16,6 +16,7 @@ const AddMenu = ({ onDataSend }) => {
   const [item, setItem] = useState("");
   const [price, setPrice] = useState("");
   const [desc, setDesc] = useState("");
+console.log(menu);
 
 
   useEffect(() => {
@@ -54,7 +55,7 @@ const AddMenu = ({ onDataSend }) => {
       <div className="bg-gray-100 w-[70%] max-[425px]:text-[12px] rounded-md px-[3%] py-[2%] mx-auto flex justify-between items-center font-QRegular">
             <input
               value={menu}
-              onChange={(e) => setMenu(e.target.value)}
+              onChange={(e) => setMenu(e.target.value.toUpperCase())}
               className="outline-none w-[90%] bg-gray-100 text-gray-500"
               type="text"
               placeholder="Menu"
