@@ -18,7 +18,8 @@ const corsOptions = {
   credentials: true, // Allow cookies to be sent
   optionsSuccessStatus: 200 // For legacy browsers
 };
-
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 app.use('/api/v1/menu',menuRoute)
 
 const __filename = fileURLToPath(import.meta.url);

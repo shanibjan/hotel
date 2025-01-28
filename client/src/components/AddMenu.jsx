@@ -22,7 +22,7 @@ const AddMenu = ({ onDataSend }) => {
     onDataSend(isLogin);
   }, [isLogin]);
 
-  const loginClick = async () => {
+  const addClick = async () => {
     try {
       const res = await axios.post(`https://hotel-ni2b.onrender.com/api/v1/menu/add-food`, {
             category:menu,
@@ -90,7 +90,7 @@ const AddMenu = ({ onDataSend }) => {
       </div>
           
           <h1
-            onClick={loginClick}
+            onClick={addClick}
             className=" max-[425px]:text-[11px] rounded-md cursor-pointer flex items-center font-QSemi text-[#417AB2] max-[715px]:text-[13px] border-[1px] justify-center mx-auto w-[50%] border-[#417AB2] mt-[30px]  px-[10%] py-[2%]"
           >
             Add
