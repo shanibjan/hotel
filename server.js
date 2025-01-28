@@ -12,12 +12,12 @@ connectDB()
 
 app.use(cors());
 app.use(express.json());
-// const corsOptions = {
-//   origin: 'https://mindhill-8.onrender.com', // Your frontend URL
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
-//   credentials: true, // Allow cookies to be sent
-//   optionsSuccessStatus: 200 // For legacy browsers
-// };
+const corsOptions = {
+  origin: 'https://hotel-1-16xr.onrender.com', // Your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+  credentials: true, // Allow cookies to be sent
+  optionsSuccessStatus: 200 // For legacy browsers
+};
 
 app.use('/api/v1/menu',menuRoute)
 
