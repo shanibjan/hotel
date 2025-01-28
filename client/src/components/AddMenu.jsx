@@ -24,7 +24,7 @@ const AddMenu = ({ onDataSend }) => {
 
   const loginClick = async () => {
     try {
-      const res = await axios.post(`http://localhost:7000/api/v1/menu/add-food`, {
+      const res = await axios.post(`https://hotel-ni2b.onrender.com/api/v1/menu/add-food`, {
             category:menu,
             name:item,
             price,
