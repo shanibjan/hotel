@@ -15,7 +15,7 @@ const Menu = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:7000/api/v1/menu/get-menu"
+        "https://hotel-ni2b.onrender.com/api/v1/menu/get-menu"
       );
       setMenu(response.data);
     } catch (error) {
